@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: java-api
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springframework.transaction: TRACE
+    org.springframework.data.r2dbc.connectionfactory: DEBUG
+    com.other: DEBUG
+
+  pattern:
+    console: "|=== %d{yyyy-MM-dd HH:mm:ss} ===|  %msg%n"
